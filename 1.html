@@ -1,262 +1,70 @@
-<!DOCTYPE html>
-<!-- saved from url=(0042)https://twitchtoolkit.github.io/item-list/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
-    <!-- Required meta tags -->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="jquery.min.js"></script>
-    <script src="list.min.js"></script>
-    <script src="angular.min.js></script>
-    <title>Bamsy' Item List</title>
-    <script type="text/javascript">
-        const itemListURL = "https://raw.githubusercontent.com/twitchtoolkit/item-list/master/StoreItems.json";
-        const eventListURL = "https://raw.githubusercontent.com/twitchtoolkit/item-list/master/StoreEvents.json";
-    </script>
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
-<body class="vsc-initialized">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.twitch.tv/the_grim_kleaper">Kleaper's Stream</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main role="main">
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">TwitchToolkit</h1>
-                <p>TwitchToolkit is a mod that integrates storytelling decisions into chat votes, awards viewers coins for watching, and those coins can be spent on items/events in game.</p>
-                <ul class="list-group">
-                    <li class="list-group-item">!bal - check balance and karma rate</li>
-                    <li class="list-group-item">!buy - Syntax: !buy beer 6 - purchase an item or event</li>
-                    <li class="list-group-item">!purchaselist - gives users a link to the public purchase list</li>
-                    <li class="list-group-item">!commands - shows all available commands to the user.</li>
-                    <li class="list-group-item">!joinqueue - join the viewer name queue</li>
-                    <li class="list-group-item">!mypawnstory - view information about your pawns backstory</li>
-                    <li class="list-group-item">!mypawnskills - view information about your pawns skills</li>
-                </ul>
-            </div>
-        </div>
-        <div ng-app="tabs" ng-controller="tabCtrl" class="ng-scope">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tabs">
-                            <form class="ng-pristine ng-valid">
-                                <div class="form-group">
-                                    <button class="btn btn-success active" ng-class="{&#39;active&#39;: (selected == &#39;1&#39;)}" ng-click="selected=1">
-                                        Items
-                                    </button>
-                                    <button class="btn btn-success" ng-class="{&#39;active&#39;: (selected == &#39;2&#39;)}" ng-click="selected=2">
-                                        Events
-                                    </button>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label" for="">Price Between:</label>
-                                    <div class="col-sm-2">
-                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <input type="number" class="form-control" id="item-price-max" placeholder="100000">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" ng-show="selected == 1">
-                    <div class="col-md-12">
-                        <div id="items">
-                            <div class="input-group input-group-sm mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
-                                </div>
-                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-                            <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="abr">
-                                    Sort
-                                </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Price
-                                </button>
-                            </p>
-                            <table class="table items">
-                                <tbody><tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="price">Price</th>
-                                    <th scope="col" class="sort" data-sort="category">Category</th>
-                                </tr>
-                                </tbody><tbody class="list"><tr><td class="abr" scope="row">advancedcomponent</td><td class="price">333</td><td class="category">Manufactured</td></tr><tr><td class="abr" scope="row">advancedhelmet</td><td class="price">442</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">agavefruit</td><td class="price">2</td><td class="category">Vegetarian</td></tr><tr><td class="abr" scope="row">aipersonacore</td><td class="price">6667</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">alpaca</td><td class="price">583</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">alpacameat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">alpacawool</td><td class="price">4</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">alphabeaver</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">alphabeavermeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">ambrosia</td><td class="price">25</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">animalbed</td><td class="price">136</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">animalsleepingbox</td><td class="price">84</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">antigrainwarhead</td><td class="price">2000</td><td class="category">Mortar shells</td></tr><tr><td class="abr" scope="row">archotecharm</td><td class="price">4667</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">archotecheye</td><td class="price">4667</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">archotechleg</td><td class="price">4667</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">arcticfox</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">arcticwolf</td><td class="price">583</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">armchair</td><td class="price">450</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">assaultrifle</td><td class="price">800</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">autopistol</td><td class="price">232</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">battery</td><td class="price">333</td><td class="category">Power</td></tr><tr><td class="abr" scope="row">bearmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">bearskin</td><td class="price">6</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">bed</td><td class="price">155</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">bedroll</td><td class="price">137</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">beef</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">beer</td><td class="price">20</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">berries</td><td class="price">2</td><td class="category">Vegetarian</td></tr><tr><td class="abr" scope="row">billiardstable</td><td class="price">600</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">bionicarm</td><td class="price">1717</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">bionicear</td><td class="price">1308</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">bioniceye</td><td class="price">1708</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">bionicheart</td><td class="price">1383</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">bionicleg</td><td class="price">1717</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">bionicspine</td><td class="price">1717</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">bionicstomach</td><td class="price">1308</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">birdmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">birdskin</td><td class="price">3</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">bluefur</td><td class="price">4</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">bolt-actionrifle</td><td class="price">425</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">boomalope</td><td class="price">583</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">boomalopemeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">boomrat</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">boomratmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">bowlerhat</td><td class="price">77</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">brewery</td><td class="price">350</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">butchertable</td><td class="price">302</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">button-downshirt</td><td class="price">166</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">camelhair</td><td class="price">4</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">camelhide</td><td class="price">4</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">capybara</td><td class="price">250</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">capybarameat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">caribou</td><td class="price">500</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">cariboumeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">cassowary</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">cassowaryegg(fert.)</td><td class="price">32</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">cat</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">catmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">chainshotgun</td><td class="price">675</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">chargelance</td><td class="price">2258</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">chargerifle</td><td class="price">1683</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">chemfuel</td><td class="price">4</td><td class="category">Manufactured</td></tr><tr><td class="abr" scope="row">chesstable</td><td class="price">281</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">chicken</td><td class="price">83</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">chickenegg(fert.)</td><td class="price">12</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">chickenegg(unfert.)</td><td class="price">12</td><td class="category">Eggs (unfert.)</td></tr><tr><td class="abr" scope="row">chickenmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">chinchilla</td><td class="price">250</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">chinchillafur</td><td class="price">11</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">chinchillameat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">chocolate</td><td class="price">5</td><td class="category">Foods</td></tr><tr><td class="abr" scope="row">cloth</td><td class="price">2</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">club</td><td class="price">141</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">cobra</td><td class="price">250</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">cobraegg(fert.)</td><td class="price">67</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">cobraflesh</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">cochlearimplant</td><td class="price">342</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">component</td><td class="price">53</td><td class="category">Manufactured</td></tr><tr><td class="abr" scope="row">corn</td><td class="price">2</td><td class="category">Vegetarian</td></tr><tr><td class="abr" scope="row">cougar</td><td class="price">667</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">cougarmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">cow</td><td class="price">500</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">cowboyhat</td><td class="price">94</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">deepdrill</td><td class="price">908</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">deer</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">devilstrand</td><td class="price">9</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">diningchair</td><td class="price">198</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">dogleather</td><td class="price">3</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">doomsdayrocketlauncher</td><td class="price">1667</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">doublebed</td><td class="price">292</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">doublebedroll</td><td class="price">290</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">dresser</td><td class="price">179</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">dromedary</td><td class="price">500</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">dromedarymeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">druglab</td><td class="price">742</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">duster</td><td class="price">327</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">electricsmelter</td><td class="price">667</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">electricsmithy</td><td class="price">492</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">electricstove</td><td class="price">375</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">electrictailorbench</td><td class="price">533</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">elephant</td><td class="price">1000</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">elephantleather</td><td class="price">5</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">elephantmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">elephanttusk</td><td class="price">133</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">elk</td><td class="price">500</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">elkmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">empgrenades</td><td class="price">525</td><td class="category">Grenades</td></tr><tr><td class="abr" scope="row">empshell</td><td class="price">92</td><td class="category">Mortar shells</td></tr><tr><td class="abr" scope="row">emu</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">emuegg(fert.)</td><td class="price">30</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">endtable</td><td class="price">106</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">fennecfox</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">fermentingbarrel</td><td class="price">95</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">finemeal</td><td class="price">33</td><td class="category">Meals</td></tr><tr><td class="abr" scope="row">firefoampopper</td><td class="price">300</td><td class="category">Misc</td></tr><tr><td class="abr" scope="row">firefoamshell</td><td class="price">92</td><td class="category">Mortar shells</td></tr><tr><td class="abr" scope="row">flakjacket</td><td class="price">483</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">flakpants</td><td class="price">375</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">flakvest</td><td class="price">375</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">flake</td><td class="price">23</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">flatscreentelevision</td><td class="price">1533</td><td class="category">Recreation</td></tr><tr><td class="abr" scope="row">foxfur</td><td class="price">6</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">foxmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">fraggrenades</td><td class="price">442</td><td class="category">Grenades</td></tr><tr><td class="abr" scope="row">fueledsmithy</td><td class="price">333</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">fueledstove</td><td class="price">265</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">game-of-urboard</td><td class="price">153</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">gazelle</td><td class="price">250</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">gazellemeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">gladius</td><td class="price">215</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">glitterworldmedicine</td><td class="price">83</td><td class="category">Medicine</td></tr><tr><td class="abr" scope="row">glowpod</td><td class="price">83</td><td class="category">Special</td></tr><tr><td class="abr" scope="row">go-juice</td><td class="price">88</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">gold</td><td class="price">17</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">grandsculpture</td><td class="price">1125</td><td class="category">Art</td></tr><tr><td class="abr" scope="row">graniteblocks</td><td class="price">2</td><td class="category">Stone blocks</td></tr><tr><td class="abr" scope="row">greatbow</td><td class="price">154</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">grizzlybear</td><td class="price">1167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">handtailorbench</td><td class="price">262</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">hare</td><td class="price">83</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">haremeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">hay</td><td class="price">1</td><td class="category">Foods</td></tr><tr><td class="abr" scope="row">healermechserum</td><td class="price">2167</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">heart</td><td class="price">833</td><td class="category">Natural</td></tr><tr><td class="abr" scope="row">heater</td><td class="price">218</td><td class="category">Temperature</td></tr><tr><td class="abr" scope="row">heavyfur</td><td class="price">6</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">heavysmg</td><td class="price">592</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">herbalmedicine</td><td class="price">17</td><td class="category">Medicine</td></tr><tr><td class="abr" scope="row">high-explosiveshell</td><td class="price">92</td><td class="category">Mortar shells</td></tr><tr><td class="abr" scope="row">hoopstonering</td><td class="price">67</td><td class="category">Recreation</td></tr><tr><td class="abr" scope="row">hops</td><td class="price">2</td><td class="category">Plant matter</td></tr><tr><td class="abr" scope="row">horseshoespin</td><td class="price">34</td><td class="category">Recreation</td></tr><tr><td class="abr" scope="row">hospitalbed</td><td class="price">667</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">human</td><td class="price">2917</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">humanleather</td><td class="price">7</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">humanmeat</td><td class="price">1</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">husky</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">huskymeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">hyperweave</td><td class="price">15</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">ibex</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">ibexmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">iedantigrainwarheadtrap</td><td class="price">2008</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">iedemptrap</td><td class="price">192</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">iedfirefoamtrap</td><td class="price">192</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">iedincendiarytrap</td><td class="price">192</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">iedtrap</td><td class="price">192</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">iguana</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">iguanaegg(fert.)</td><td class="price">42</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">iguanameat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">ikwa</td><td class="price">197</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">incendiarylauncher</td><td class="price">508</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">incendiaryshell</td><td class="price">92</td><td class="category">Mortar shells</td></tr><tr><td class="abr" scope="row">infinitechemreactor</td><td class="price">2500</td><td class="category">Special</td></tr><tr><td class="abr" scope="row">insectjelly</td><td class="price">13</td><td class="category">Animal products</td></tr><tr><td class="abr" scope="row">insectmeat</td><td class="price">1</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">jacket</td><td class="price">275</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">jade</td><td class="price">8</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">joywire</td><td class="price">1333</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">kibble</td><td class="price">2</td><td class="category">Foods</td></tr><tr><td class="abr" scope="row">kidney</td><td class="price">417</td><td class="category">Natural</td></tr><tr><td class="abr" scope="row">knife</td><td class="price">111</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">labradorretriever</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">labradorretrievermeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">largesculpture</td><td class="price">517</td><td class="category">Art</td></tr><tr><td class="abr" scope="row">lavishmeal</td><td class="price">67</td><td class="category">Meals</td></tr><tr><td class="abr" scope="row">lightleather</td><td class="price">3</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">limestoneblocks</td><td class="price">2</td><td class="category">Stone blocks</td></tr><tr><td class="abr" scope="row">liver</td><td class="price">833</td><td class="category">Natural</td></tr><tr><td class="abr" scope="row">lizardskin</td><td class="price">3</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">lmg</td><td class="price">708</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">longsword</td><td class="price">442</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">luciferium</td><td class="price">200</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">lung</td><td class="price">667</td><td class="category">Natural</td></tr><tr><td class="abr" scope="row">lynx</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">lynxmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">mace</td><td class="price">203</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">machinepistol</td><td class="price">367</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">machiningtable</td><td class="price">758</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">marbleblocks</td><td class="price">2</td><td class="category">Stone blocks</td></tr><tr><td class="abr" scope="row">marinearmor</td><td class="price">3392</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">marinehelmet</td><td class="price">1058</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">medicine</td><td class="price">30</td><td class="category">Medicine</td></tr><tr><td class="abr" scope="row">megascarab</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">megascreentelevision</td><td class="price">2475</td><td class="category">Recreation</td></tr><tr><td class="abr" scope="row">megasloth</td><td class="price">1167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">megaslothmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">megaslothwool</td><td class="price">4</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">megaspider</td><td class="price">833</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">milk</td><td class="price">5</td><td class="category">Animal products</td></tr><tr><td class="abr" scope="row">minigun</td><td class="price">1933</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">mini-turret</td><td class="price">508</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">molotovcocktails</td><td class="price">408</td><td class="category">Grenades</td></tr><tr><td class="abr" scope="row">monkey</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">monkeymeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">mortar</td><td class="price">708</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">muffalo</td><td class="price">500</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">muffalomeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">muffalowool</td><td class="price">4</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">multi-analyzer</td><td class="price">1700</td><td class="category">Misc</td></tr><tr><td class="abr" scope="row">neurotrainermechserum</td><td class="price">1250</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">neutroamine</td><td class="price">10</td><td class="category">Manufactured</td></tr><tr><td class="abr" scope="row">nutrientpastemeal</td><td class="price">17</td><td class="category">Meals</td></tr><tr><td class="abr" scope="row">orbitalbombardmenttargeter</td><td class="price">2000</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">orbitalpowerbeamtargeter</td><td class="price">2000</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">orbitaltradebeacon</td><td class="price">185</td><td class="category">Misc</td></tr><tr><td class="abr" scope="row">ostrich</td><td class="price">417</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">ostrichegg(fert.)</td><td class="price">38</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">packagedsurvivalmeal</td><td class="price">40</td><td class="category">Meals</td></tr><tr><td class="abr" scope="row">painstopper</td><td class="price">1333</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">panther</td><td class="price">667</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">panthermeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">pantherafur</td><td class="price">5</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">pants</td><td class="price">143</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">parka</td><td class="price">315</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">patchleather</td><td class="price">2</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">pemmican</td><td class="price">2</td><td class="category">Foods</td></tr><tr><td class="abr" scope="row">penoxycyline</td><td class="price">30</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">pig</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">pigskin</td><td class="price">3</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">pila</td><td class="price">182</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">plainleather</td><td class="price">3</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">plantpot</td><td class="price">68</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">plasteel</td><td class="price">15</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">platearmor</td><td class="price">792</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">pokertable</td><td class="price">400</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">polarbear</td><td class="price">1167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">pork</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">potatoes</td><td class="price">2</td><td class="category">Vegetarian</td></tr><tr><td class="abr" scope="row">powerclaw</td><td class="price">2000</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">prostheticarm</td><td class="price">408</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">prostheticheart</td><td class="price">358</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">prostheticleg</td><td class="price">408</td><td class="category">Artificial</td></tr><tr><td class="abr" scope="row">psychicanimalpulser</td><td class="price">1167</td><td class="category">Artifacts</td></tr><tr><td class="abr" scope="row">psychicemanator</td><td class="price">2167</td><td class="category">Special</td></tr><tr><td class="abr" scope="row">psychicfoilhelmet</td><td class="price">417</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">psychicinsanitylance</td><td class="price">1083</td><td class="category">Artifacts</td></tr><tr><td class="abr" scope="row">psychicshocklance</td><td class="price">917</td><td class="category">Artifacts</td></tr><tr><td class="abr" scope="row">psychicsoothepulser</td><td class="price">1000</td><td class="category">Artifacts</td></tr><tr><td class="abr" scope="row">psychitetea</td><td class="price">17</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">psychoidleaves</td><td class="price">3</td><td class="category">Plant matter</td></tr><tr><td class="abr" scope="row">pumpshotgun</td><td class="price">425</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">raccoon</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">raccoonmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">rat</td><td class="price">58</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">ratmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">rawfungus</td><td class="price">2</td><td class="category">Vegetarian</td></tr><tr><td class="abr" scope="row">recurvebow</td><td class="price">110</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">redfox</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">resurrectormechserum</td><td class="price">2833</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">revolver</td><td class="price">226</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">rhinoceros</td><td class="price">1167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">rhinocerosleather</td><td class="price">7</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">rhinocerosmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">rice</td><td class="price">2</td><td class="category">Vegetarian</td></tr><tr><td class="abr" scope="row">royalbed</td><td class="price">1467</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">sandstoneblocks</td><td class="price">2</td><td class="category">Stone blocks</td></tr><tr><td class="abr" scope="row">sculptor'stable</td><td class="price">425</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">shelf</td><td class="price">104</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">shieldbelt</td><td class="price">650</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">shortbow</td><td class="price">74</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">silver</td><td class="price">2</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">simplehelmet</td><td class="price">153</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">simplemeal</td><td class="price">25</td><td class="category">Meals</td></tr><tr><td class="abr" scope="row">simpleresearchbench</td><td class="price">350</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">slateblocks</td><td class="price">2</td><td class="category">Stone blocks</td></tr><tr><td class="abr" scope="row">smallsculpture</td><td class="price">275</td><td class="category">Art</td></tr><tr><td class="abr" scope="row">smokeleafjoint</td><td class="price">18</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">smokeleafleaves</td><td class="price">3</td><td class="category">Plant matter</td></tr><tr><td class="abr" scope="row">smokepopbelt</td><td class="price">277</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">sniperrifle</td><td class="price">883</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">snowhare</td><td class="price">83</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">spear</td><td class="price">322</td><td class="category">Melee weapons</td></tr><tr><td class="abr" scope="row">spelopede</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">spiketrap</td><td class="price">136</td><td class="category">Security</td></tr><tr><td class="abr" scope="row">squirrel</td><td class="price">58</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">squirrelmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">standinglamp</td><td class="price">65</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">standinglamp(blue)</td><td class="price">65</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">standinglamp(green)</td><td class="price">65</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">standinglamp(red)</td><td class="price">65</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">steel</td><td class="price">3</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">stonecutter'stable</td><td class="price">358</td><td class="category">Production</td></tr><tr><td class="abr" scope="row">stool</td><td class="price">86</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">sunlamp</td><td class="price">129</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">synthread</td><td class="price">7</td><td class="category">Textiles</td></tr><tr><td class="abr" scope="row">table(1x2)</td><td class="price">98</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">table(2x2)</td><td class="price">176</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">table(2x4)</td><td class="price">333</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">table(3x3)</td><td class="price">350</td><td class="category">Furniture</td></tr><tr><td class="abr" scope="row">techprofsubpersonacore</td><td class="price">1667</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">telescope</td><td class="price">583</td><td class="category">Recreation</td></tr><tr><td class="abr" scope="row">thrumbo</td><td class="price">6667</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">thrumbohorn</td><td class="price">1333</td><td class="category">Items</td></tr><tr><td class="abr" scope="row">thrumbomeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">thrumbofur</td><td class="price">23</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">timberwolf</td><td class="price">583</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">toolcabinet</td><td class="price">642</td><td class="category">Misc</td></tr><tr><td class="abr" scope="row">tornadogenerator</td><td class="price">1333</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">tortoise</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">tortoiseegg(fert.)</td><td class="price">38</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">tortoisemeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">tribalheaddress</td><td class="price">203</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">tribalwear</td><td class="price">211</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">triplerocketlauncher</td><td class="price">1667</td><td class="category">Ranged weapons</td></tr><tr><td class="abr" scope="row">t-shirt</td><td class="price">143</td><td class="category">Apparel</td></tr><tr><td class="abr" scope="row">tubetelevision</td><td class="price">525</td><td class="category">Recreation</td></tr><tr><td class="abr" scope="row">tuque</td><td class="price">91</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">turkey</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">turkeyegg(fert.)</td><td class="price">18</td><td class="category">Eggs (fert.)</td></tr><tr><td class="abr" scope="row">turkeymeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">uranium</td><td class="price">10</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">vanometricpowercell</td><td class="price">2000</td><td class="category">Special</td></tr><tr><td class="abr" scope="row">venison</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">vitalsmonitor</td><td class="price">358</td><td class="category">Misc</td></tr><tr><td class="abr" scope="row">wake-up</td><td class="price">58</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">warmask</td><td class="price">101</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">warveil</td><td class="price">75</td><td class="category">Headgear</td></tr><tr><td class="abr" scope="row">warg</td><td class="price">750</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">wargmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">wildboar</td><td class="price">333</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">wolfmeat</td><td class="price">3</td><td class="category">Meat</td></tr><tr><td class="abr" scope="row">wolfskin</td><td class="price">5</td><td class="category">Leathers</td></tr><tr><td class="abr" scope="row">wood</td><td class="price">2</td><td class="category">Raw resources</td></tr><tr><td class="abr" scope="row">wort</td><td class="price">4</td><td class="category">Manufactured</td></tr><tr><td class="abr" scope="row">yayo</td><td class="price">35</td><td class="category">Drugs</td></tr><tr><td class="abr" scope="row">yorkshireterrier</td><td class="price">167</td><td class="category">Animal</td></tr><tr><td class="abr" scope="row">yorkshireterriermeat</td><td class="price">3</td><td class="category">Meat</td></tr></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ng-hide" ng-show="selected == 2">
-                    <div class="col-md-12">
-                        <div id="events">
-                            <div class="input-group input-group-sm mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
-                                </div>
-                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-                            <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="abr">
-                                    Sort
-                                </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Price
-                                </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="karmatype">
-                                    Sort by Karma
-                                </button>
-                            </p>
-                            <table class="table events">
-                                <tbody><tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="price">Price</th>
-                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
-                                </tr>
-                                </tbody><tbody class="list"><tr><td class="abr" scope="row">tornado</td><td class="price">800</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">tornados</td><td class="price">2600</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">clearweather</td><td class="price">400</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">rain</td><td class="price">350</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">vomitrain</td><td class="price">650</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">foggyrain</td><td class="price">300</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">rainythunderstorm</td><td class="price">250</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">drythunderstorm</td><td class="price">450</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">snowgentle</td><td class="price">350</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">snowhard</td><td class="price">450</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">fog</td><td class="price">300</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">heatwave</td><td class="price">750</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">flashstorm</td><td class="price">400</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">coldsnap</td><td class="price">800</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">solarflare</td><td class="price">500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">shortcircuit</td><td class="price">500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">toxicfallout</td><td class="price">6500</td><td class="karmatype">Doom</td></tr><tr><td class="abr" scope="row">volcanicwinter</td><td class="price">3200</td><td class="karmatype">Doom</td></tr><tr><td class="abr" scope="row">eclipse</td><td class="price">450</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">aurora</td><td class="price">200</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">blight</td><td class="price">700</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">refugeechased</td><td class="price">650</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">animaltame</td><td class="price">150</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">resourcepodcrash</td><td class="price">300</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">transportpodcrash</td><td class="price">600</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">tradercaravan</td><td class="price">275</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">orbitaltraderarrival</td><td class="price">350</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">inspiration</td><td class="price">150</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">meteor</td><td class="price">150</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">maninblack</td><td class="price">350</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">madanimal</td><td class="price">200</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">psychicdrone</td><td class="price">400</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">psychicsoothe</td><td class="price">250</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">ambrosiasprout</td><td class="price">150</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">herdmigration</td><td class="price">200</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">farmanimals</td><td class="price">400</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">wildman</td><td class="price">300</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">rarethrumbos</td><td class="price">500</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">shipchunkdrop</td><td class="price">300</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">travelergroup</td><td class="price">80</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">visitorgroup</td><td class="price">200</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">skillincrease</td><td class="price">200</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">party</td><td class="price">400</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">alphabeavers</td><td class="price">600</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">shippartpoison</td><td class="price">1900</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">shippartpsychic</td><td class="price">2400</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">militaryaid</td><td class="price">700</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">raid</td><td class="price">1500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">dropraid</td><td class="price">1500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">sapperraid</td><td class="price">1500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">siegeraid</td><td class="price">2500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">mechanoidraid</td><td class="price">2500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">infestation</td><td class="price">2500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">manhunterpack</td><td class="price">1500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">predators</td><td class="price">2500</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">randomdisease</td><td class="price">1000</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">disease</td><td class="price">1000</td><td class="karmatype">Bad</td></tr><tr><td class="abr" scope="row">reviveanypawn</td><td class="price">1200</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">pawn</td><td class="price">1500</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">gambleskill</td><td class="price">1500</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">trait</td><td class="price">3500</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">removetrait</td><td class="price">5500</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">genderswap</td><td class="price">600</td><td class="karmatype">Neutral</td></tr><tr><td class="abr" scope="row">prisoner</td><td class="price">800</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">visitcolony</td><td class="price">300</td><td class="karmatype">Good</td></tr><tr><td class="abr" scope="row">berescued</td><td class="price">900</td><td class="karmatype">Good</td></tr></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <hr>
-        </div>
-    </main>
-    <footer class="text-muted">
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./Hodl&#39;s Item List_files/popper.min.js.download" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="./Hodl&#39;s Item List_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./Hodl&#39;s Item List_files/v1.js.download"></script>
-    <style>
-        .sort:after {
-            display: inline-block;
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 5px solid transparent;
-            content: "";
-            position: relative;
-            top: -10px;
-            right: -5px;
-        }
-        
-        .sort.asc:after {
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 5px solid #fff;
-            content: "";
-            position: relative;
-            top: 4px;
-            right: -5px;
-        }
-        
-        .sort.desc:after {
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 5px solid #fff;
-            content: "";
-            position: relative;
-            top: -4px;
-            right: -5px;
-        }
-    </style>
-    <script type="text/javascript">
-        let itemList = null;
-        $.getJSON(itemListURL, function(data) {
-            var options = {
-                valueNames: ['abr', 'price', 'category'],
-                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
-            };
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
-            var itemData = [];
-            $.each(data.items, function(index, value) {
-                if (value["price"] > 0) {
-                    itemData.push(value);
-                }
-            });
-
-            itemList = new List('items', options, itemData);
-        });
-
-        let eventList = null;
-        $.getJSON(eventListURL, function(data) {
-            var options = {
-                valueNames: ['abr', 'price', 'karmatype'],
-                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
-            };
-
-            var eventData = [];
-            $.each(data.incitems, function(index, value) {
-                if (value["price"] > 0) {
-                    eventData.push(value);
-                }
-            });
-
-            eventList = new List('events', options, eventData);
-        });
-
-        $("#item-price-min").keyup(function() {
-            updateItemFilter();
-        });
-
-        $("#item-price-max").keyup(function() {
-            updateItemFilter();
-        });
-
-        function updateItemFilter() {
-            var minPrice = $("#item-price-min").val();
-            var maxPrice = $("#item-price-max").val();
-            itemList.filter(function(item) {
-                var allow = true;
-                if (minPrice != "" && parseInt(item.values().price) < minPrice) {
-                    allow = false;
-                }
-                if (maxPrice != "" && parseInt(item.values().price) > maxPrice) {
-                    allow = false;
-                }
-                return allow;
-            });
-	    eventList.filter(function(item) {
-                var allow = true;
-                if (minPrice != "" && parseInt(item.values().price) < minPrice) {
-                    allow = false;
-                }
-                if (maxPrice != "" && parseInt(item.values().price) > maxPrice) {
-                    allow = false;
-                }
-                return allow;
-            });
-        }
-    </script>
-    <script type="text/javascript">
-        var tabs = angular.module('tabs', [])
-            .controller('tabCtrl', function($scope) {
-                $scope.selected = "1";
-            });
-    </script>
-
-
-
-</body></html>
+<div id="contacts">
+  <table>
+    <thead>
+      <tr>
+        <th class="sort" data-sort="name">Name</th>
+        <th class="sort" data-sort="age">Age</th>
+        <th class="sort" data-sort="city">City</th>
+        <th colspan="2">
+          <input type="text" class="search" placeholder="Search contact" />
+        </th>
+      </tr>
+    </thead>
+    <tbody class="list">
+      <tr>
+        <td class="id" style="display:none;">1</td>
+        <td class="name">Jonny</td>
+        <td class="age">27</td>
+        <td class="city">Stockholm</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td class="id" style="display:none;">2</td>
+        <td class="name">Jonas</td>
+        <td class="age">-132</td>
+        <td class="city">Berlin</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td class="id" style="display:none;">3</td>
+        <td class="name">Gustaf</td>
+        <td class="age">-23</td>
+        <td class="city">Sundsvall</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td class="id" style="display:none;">4</td>
+        <td class="name">Fredrik</td>
+        <td class="age">26</td>
+        <td class="city">Goteborg</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <td class="name">
+      <input type="hidden" id="id-field" />
+      <input type="text" id="name-field" placeholder="Name" />
+    </td>
+    <td class="age">
+      <input type="text" id="age-field" placeholder="Age" />
+    </td>
+    <td class="city">
+      <input type="text" id="city-field" placeholder="City" />
+    </td>
+    <td class="add">
+      <button id="add-btn">Add</button>
+      <button id="edit-btn">Edit</button>
+    </td>
+  </table>
+  
+  <p>This is just a simple example showing how to use <code>add()</code>, <code>values()</code> and <code>remove()</code>. The example have bugs (not List.js (I hope ;)) so I do not recommend copy-paste programming.</p>
+</div>
