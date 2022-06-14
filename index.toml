@@ -1,8 +1,9 @@
 hash-format = "sha256"
 
 [[files]]
-file = "mods/3dskinlayers.toml"
+file = "mods/3dskinlayers.pw.toml"
 hash = "ff7140fc668f091449c82e5a32ab7c4c519212abb67ad790d123ce65f0c3ce6e"
+metafile = true
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
@@ -220,8 +221,9 @@ hash = "e94099ca3e2a2baa133f298728d7e6434e60da33804ba4b2489d1fd857e83ba1"
 metafile = true
 
 [[files]]
-file = "mods/ftbbackups2.toml"
+file = "mods/ftbbackups2.pw.toml"
 hash = "ae42b29176b6f3098277ac981218902b0b29ac8251c7512f825c6eb82e2e8289"
+metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
