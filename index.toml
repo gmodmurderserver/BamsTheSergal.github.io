@@ -216,6 +216,10 @@ hash = "e94099ca3e2a2baa133f298728d7e6434e60da33804ba4b2489d1fd857e83ba1"
 metafile = true
 
 [[files]]
+file = "mods/ftbbackups2.toml"
+hash = "ae42b29176b6f3098277ac981218902b0b29ac8251c7512f825c6eb82e2e8289"
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "335d51f82803c67fa8a88d6dd3aa403ea2ffdb4bc73b27ba27c928734f51f96d"
 metafile = true
