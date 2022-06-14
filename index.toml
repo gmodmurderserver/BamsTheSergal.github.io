@@ -201,11 +201,6 @@ hash = "1ad39bf13de8391ebd87c7788f18c61a45d823ca03496cfa67092088b1919bc5"
 metafile = true
 
 [[files]]
-file = "mods/ftb-backups-2.pw.toml"
-hash = "6f2867d9bae0ad1b6d65c8ebbbf1101b0a458d7d5ea31edc9c8119f3d04da079"
-metafile = true
-
-[[files]]
 file = "mods/ftb-essentials-forge.pw.toml"
 hash = "3546d7047d24d2358cfaf52b0d02008076cd22e4467d1f8faab96cde72492c58"
 metafile = true
@@ -403,11 +398,6 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "63969990248817c25f62f619d1f955c88d9c5571f7025a95927e985b178508b1"
-metafile = true
-
-[[files]]
-file = "mods/skin-layers-3d.pw.toml"
-hash = "8cd8c8b9030e93a78be3da2cd2507fa1ef3734fae96e57fff14273041dddab64"
 metafile = true
 
 [[files]]
