@@ -1,0 +1,13 @@
+name = "Bamsy's test pack"
+author = "BamsyTheSergal"
+version = "0.0.5"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "0242b9cd173952129e058dbe04690442f71673cc5b018d886e9ec012d31d903e"
+
+[versions]
+forge = "40.1.51"
+minecraft = "1.18.2"
