@@ -1,0 +1,9 @@
+name = "3D Skin Layers"
+filename = "3dskinlayers.jar"
+side = "client"
+
+[download]
+url = "https://gmodmurderserver.github.io/3dskinlayers.jar"
+
+hash-format = "sha256"
+hash = "fcd95077183219e07bad5418453b45e5ae4cc42558691e747e66150378c1a7af"
