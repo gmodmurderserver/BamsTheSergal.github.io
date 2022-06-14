@@ -1,0 +1,9 @@
+name = "FTB Backups 2"
+filename = "ftbbackups2.jar"
+side = "both"
+
+[download]
+url = "https://gmodmurderserver.github.io/ftbbackups2.jar"
+
+hash-format = "sha256"
+hash = "946acaf5bd7fa242e19f8b6cf39eed08617f4c4b3c17539c8edbb87b28d7ebaa"
