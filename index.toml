@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/3dskinlayers.toml"
+hash = "ff7140fc668f091449c82e5a32ab7c4c519212abb67ad790d123ce65f0c3ce6e"
+
+[[files]]
 file = "mods/ai-improvements.pw.toml"
 hash = "5fe98822fbe3adef3dcdac8343ca57178cd80b29088f3933a203ec86416ac8c7"
 metafile = true
