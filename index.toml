@@ -96,6 +96,11 @@ hash = "6a9f1b9e10ecf59176bb08c928425b12433aab172433ce475bbf86093fad8e1b"
 metafile = true
 
 [[files]]
+file = "mods/cofh-core.pw.toml"
+hash = "17087079b1572a002e826a8b0e55186cb77d4c391cdf69814848c3f49e066520"
+metafile = true
+
+[[files]]
 file = "mods/common-capabilities.pw.toml"
 hash = "7dc37c73773f83859ba8908a29e5383e4bd2ea03e49181beb872de40593cbfb8"
 metafile = true
@@ -296,6 +301,16 @@ hash = "066724792c2890d3efb0857d7fedbcd1a996c06d260b664a705a886a74153123"
 metafile = true
 
 [[files]]
+file = "mods/kubejs-thermal.pw.toml"
+hash = "f7a30dd8ac0e6c211ce7d381591cdfdde700a17589f2c23ffba5037b2ce76feb"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-ui.pw.toml"
+hash = "1bfc3bfd36b4ec6584a0b47fff71a4ce8c6b3b752643dabad1a92b1f170a462e"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "e777299e0a4e520015143d8f870f9ff33dafa8f8df374024bf89b529d48a6766"
 metafile = true
@@ -303,6 +318,11 @@ metafile = true
 [[files]]
 file = "mods/laserio.pw.toml"
 hash = "418ef7f56c848f8bcd8b8692e48738d6c5d53d499c27c279f5cb90990b337aaf"
+metafile = true
+
+[[files]]
+file = "mods/libx.pw.toml"
+hash = "005d17b6efee5feadae53d4ac3231f8a180379d09e354d539fbeb09ec78ac974"
 metafile = true
 
 [[files]]
@@ -363,6 +383,11 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "d4387b349263ad444eecef69632583cecde62fa689cf7589bc04f2cdbdcc2352"
+metafile = true
+
+[[files]]
+file = "mods/pocket-storage.pw.toml"
+hash = "31026f9d97a4aa2161d35be3d0fbc5df686c18275e12c302180118e5e9e2606f"
 metafile = true
 
 [[files]]
@@ -446,6 +471,31 @@ hash = "88a1d22c971657c0da41a1558cebf78622fa527c67e40e9f15325cde2e848a8c"
 metafile = true
 
 [[files]]
+file = "mods/thermal-cultivation.pw.toml"
+hash = "88d28994eb410b89b5f82541b683feda31e2b0985ccda6f038730fcead531afe"
+metafile = true
+
+[[files]]
+file = "mods/thermal-expansion.pw.toml"
+hash = "b01a8cbc94c0f254fcc1c1078c0f86eee79d6f7d83a6d34598aaa7b0eb03ca27"
+metafile = true
+
+[[files]]
+file = "mods/thermal-foundation.pw.toml"
+hash = "4a99e860d8c57a2514480be5b23680d8361115906ea6c318807c15c0eefa23f0"
+metafile = true
+
+[[files]]
+file = "mods/thermal-innovation.pw.toml"
+hash = "97ff742629e0988d62b50aca81beb5ff7829e1084dbc4e014e7453d95a6d633b"
+metafile = true
+
+[[files]]
+file = "mods/time-in-a-bottle-standalone.pw.toml"
+hash = "18d3ca66bb865c79e67fb7369b6f45229cc5b1ed6a083b1b2eee0e3b15d2ec8c"
+metafile = true
+
+[[files]]
 file = "mods/tinkers-construct.pw.toml"
 hash = "4275242bc6cd5ff6a7b23463f3921fc3bced4b9fc2e5f4a634ec5be96d0e21e2"
 metafile = true
@@ -468,6 +518,11 @@ metafile = true
 [[files]]
 file = "mods/trashslot.pw.toml"
 hash = "6cc3cde3c844cfcd108a971cc8493a69aa4159f61bfdae23a498a50cb87a1173"
+metafile = true
+
+[[files]]
+file = "mods/travel-anchors.pw.toml"
+hash = "ff99c0c84446aa5fe4137bafa7263f5d3c09c5c471832902e917cb8fc60eeae7"
 metafile = true
 
 [[files]]

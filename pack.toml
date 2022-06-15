@@ -1,6 +1,6 @@
 name = "Bamsy's test pack"
 author = "BamsyTheSergal"
-version = "0.0.5"
+version = "0.0.7"
 pack-format = "packwiz:1.1.0"
 
 [index]
