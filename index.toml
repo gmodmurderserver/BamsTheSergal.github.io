@@ -81,6 +81,11 @@ hash = "fa0c6effc516083a7cfd1e9765e824cd9888b22e9fcc33b8d5e82a354a1024bd"
 metafile = true
 
 [[files]]
+file = "mods/chemlib.pw.toml"
+hash = "6adfd047925d8b5aa08fc70107afe311e5c05df6692408c895ba8d6b8690a50f"
+metafile = true
+
+[[files]]
 file = "mods/citadel.pw.toml"
 hash = "dbe6a9e42390a6e5fa08ebd31c44567981ec8face7afff290930d542bd87f6e7"
 metafile = true
