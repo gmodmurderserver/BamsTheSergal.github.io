@@ -1,0 +1,13 @@
+name = "Chem Lib"
+filename = "chemlib-1.18.2-2.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a40c3383ac9ed83aa6974aa4c523b2efe2cc565b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3822038
+project-id = 340666
