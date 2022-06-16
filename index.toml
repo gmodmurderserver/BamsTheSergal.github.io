@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "kubejs/startup_scripts/script.js"
+hash = "d2610839a9f4a64085007e7158fcd1b4c49fbce18ddc4697ba01d3b0eae60dda"
+
+[[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "ff7140fc668f091449c82e5a32ab7c4c519212abb67ad790d123ce65f0c3ce6e"
 metafile = true
