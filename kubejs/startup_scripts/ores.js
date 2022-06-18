@@ -4,6 +4,6 @@ onEvent('block.registry', event => {
        .hardness(1)
        .displayName('Scandium Ore') // No longer required in 1.18.2+
        .tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a shovel in 1.18.2+
-	   .texture('kubejs\assets\kubejs\textures\block\scandium.png')
+	   .texture('kubejs/assets/kubejs/textures/block/scandium.png')
 	   
 })
