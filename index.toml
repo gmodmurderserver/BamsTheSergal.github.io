@@ -26,7 +26,7 @@ hash = "7f3cc60408e7a2c6adbe401db9e76630a7872fd05862fa97ea4443550c03d28e"
 
 [[files]]
 file = "kubejs/startup_scripts/ores.js"
-hash = "cd293afc61778185ef7db4da37f317b7033add7f8be9d331530b16b7751e1ae7"
+hash = "948da51445ae9d371b90460ad604c4b68b5b799365be53320da6d52b04c33131"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
@@ -34,7 +34,7 @@ hash = "d2610839a9f4a64085007e7158fcd1b4c49fbce18ddc4697ba01d3b0eae60dda"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
-hash = "a277ff8109be37642e3d95745f4d456d92663ec86566aa25d1df0ad1f891c26f"
+hash = "927005d70e6a7b17f330f1e07b41d985cfb92f27d39ee84e67779ed6c2e63c4d"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
