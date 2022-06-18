@@ -21,8 +21,20 @@ file = "icon.png"
 hash = "abc3a384576bfca847aa5f27aad134d220e342b990959f59e47cf55092ffeb09"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/scandium.png"
+hash = "7f3cc60408e7a2c6adbe401db9e76630a7872fd05862fa97ea4443550c03d28e"
+
+[[files]]
+file = "kubejs/startup_scripts/ores.js"
+hash = "cd293afc61778185ef7db4da37f317b7033add7f8be9d331530b16b7751e1ae7"
+
+[[files]]
 file = "kubejs/startup_scripts/script.js"
 hash = "d2610839a9f4a64085007e7158fcd1b4c49fbce18ddc4697ba01d3b0eae60dda"
+
+[[files]]
+file = "kubejs/startup_scripts/worldgen.js"
+hash = "a277ff8109be37642e3d95745f4d456d92663ec86566aa25d1df0ad1f891c26f"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -132,6 +144,11 @@ metafile = true
 [[files]]
 file = "mods/common-capabilities.pw.toml"
 hash = "7dc37c73773f83859ba8908a29e5383e4bd2ea03e49181beb872de40593cbfb8"
+metafile = true
+
+[[files]]
+file = "mods/compact-ores.pw.toml"
+hash = "01da69619cbdd08d0e105f8477fa60f7b377ca66e67d86097968c0f5c56c8087"
 metafile = true
 
 [[files]]
