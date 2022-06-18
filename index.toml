@@ -17,6 +17,10 @@ file = "config/sdrp-client.toml"
 hash = "757f8bc346e2f991ca67fb1e2f761a4fcbb0f4684f4725c4bf7e27ad11fae1f1"
 
 [[files]]
+file = "icon.png"
+hash = "abc3a384576bfca847aa5f27aad134d220e342b990959f59e47cf55092ffeb09"
+
+[[files]]
 file = "kubejs/startup_scripts/script.js"
 hash = "d2610839a9f4a64085007e7158fcd1b4c49fbce18ddc4697ba01d3b0eae60dda"
 

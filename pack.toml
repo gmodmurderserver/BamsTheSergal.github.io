@@ -1,12 +1,12 @@
 name = "Bamsy's test pack"
 author = "BamsyTheSergal"
-version = "0.1.0"
+version = "0.1.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ef05b78460384c699ed3aa59b479298d808a0946b61447339fa2c383ad0b9217"
+hash = "5421bd5e5f2348b8d54aa51a1a363589f060bbfdd1b59bcf6a1b629d8286ecf3"
 
 [versions]
 forge = "40.1.51"
