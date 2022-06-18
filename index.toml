@@ -21,12 +21,12 @@ file = "icon.png"
 hash = "abc3a384576bfca847aa5f27aad134d220e342b990959f59e47cf55092ffeb09"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/scandium.png"
+file = "kubejs/assets/kubejs/textures/block/scandium_ore.png"
 hash = "7f3cc60408e7a2c6adbe401db9e76630a7872fd05862fa97ea4443550c03d28e"
 
 [[files]]
 file = "kubejs/startup_scripts/ores.js"
-hash = "948da51445ae9d371b90460ad604c4b68b5b799365be53320da6d52b04c33131"
+hash = "8f3e7b378bd813c4a52b5f2bb0c963f4898d20d1b62469e311f8e2524dd7fb8c"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
