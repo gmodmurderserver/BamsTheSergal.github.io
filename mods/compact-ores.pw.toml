@@ -1,0 +1,13 @@
+name = "Compact Ores"
+filename = "compactores-1.18.2-4.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c211a27963cdc6257659c3af816102abcd6d9274"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3801260
+project-id = 354382
