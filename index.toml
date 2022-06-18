@@ -1,6 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/defaultoptions-common.toml"
+hash = "3c6307abe209aeab5c7ae65e011e1460d59826bde479b284c297f876cbb07355"
+
+[[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "de6615dec272e0811ef8915cf7552d392c54012602d88b1cc35451f15eb3c744"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "3f52fa018fda15aba172f5b6fbc93fc8f937fc03719a6056ecd2dc8da2f795e8"
+
+[[files]]
+file = "config/sdrp-client.toml"
+hash = "757f8bc346e2f991ca67fb1e2f761a4fcbb0f4684f4725c4bf7e27ad11fae1f1"
+
+[[files]]
 file = "kubejs/startup_scripts/script.js"
 hash = "d2610839a9f4a64085007e7158fcd1b4c49fbce18ddc4697ba01d3b0eae60dda"
 
@@ -275,11 +291,6 @@ hash = "8fda0cdba40d0b749cd82595cdcee05ebf59761577aa9d32083d65bef4fdca3e"
 metafile = true
 
 [[files]]
-file = "mods/jaopca.pw.toml"
-hash = "06028bfa8c1d7172fa403fc2f59471f19f9d821d4abad8d8b42938da50d5890e"
-metafile = true
-
-[[files]]
 file = "mods/jei.pw.toml"
 hash = "75976d5b9171e45912039c6b82ef4046335ccaf0e91be41a3551bf5dd4794199"
 metafile = true
@@ -442,6 +453,11 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "63969990248817c25f62f619d1f955c88d9c5571f7025a95927e985b178508b1"
+metafile = true
+
+[[files]]
+file = "mods/simple-discord-rich-presence.pw.toml"
+hash = "7bf289a586d0c645b4ffcd87076443d543a34050747ac1d34595082046dae101"
 metafile = true
 
 [[files]]
