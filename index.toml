@@ -71,6 +71,11 @@ hash = "a63a236b02421ae8306126c52c688dcd84f9bd8f0509e0a99bbbed0d0a6f7ca7"
 metafile = true
 
 [[files]]
+file = "mods/configurable-cane.pw.toml"
+hash = "2e7d37793835d98b550c81c44b08263b978643990f5cbb529ac9cddfc2ba3824"
+metafile = true
+
+[[files]]
 file = "mods/configured.pw.toml"
 hash = "8885728c751b6e20f3fc4a9394723ce5250a2fa1fe4078ad83cc27b441e20ba3"
 metafile = true
@@ -103,6 +108,11 @@ metafile = true
 [[files]]
 file = "mods/durability-tooltip.pw.toml"
 hash = "5fcdab0e58603298af3683023afa2ff16d1e39add0e7a94502badc4f8d5e52dc"
+metafile = true
+
+[[files]]
+file = "mods/ex-compressum.pw.toml"
+hash = "2637ee79835280cd80b0f9e25afc97a7969b7536ac36b4a96e776b5e9b17705c"
 metafile = true
 
 [[files]]
@@ -258,6 +268,11 @@ metafile = true
 [[files]]
 file = "mods/journeymap.pw.toml"
 hash = "f2491624aa308147b5c78cdbbe9e850430f2479a0bd0529a6b0261d2a082a45c"
+metafile = true
+
+[[files]]
+file = "mods/kleeslabs.pw.toml"
+hash = "932425500954d688e35ec443d45b6efa81879971bb53c7ed0c2d5d75072a2004"
 metafile = true
 
 [[files]]
@@ -513,6 +528,11 @@ metafile = true
 [[files]]
 file = "mods/thermal-integration.pw.toml"
 hash = "a9004238b4abf056c1de8ef6b6466b2d1d085c1d256b5f68b980dc4e034b5c3b"
+metafile = true
+
+[[files]]
+file = "mods/time-in-a-bottle-standalone.pw.toml"
+hash = "18d3ca66bb865c79e67fb7369b6f45229cc5b1ed6a083b1b2eee0e3b15d2ec8c"
 metafile = true
 
 [[files]]
