@@ -1,0 +1,11 @@
+name = "exnihlocore"
+filename = "ExNihiloSequentia-1.18.2-20220818-010806 (1).jar"
+side = "both"
+
+[download]
+url = "https://github.com/gmodmurderserver/gmodmurderserver.github.io/raw/main/ExNihiloSequentia-1.18.2-20220818-010806%20(1).jar"
+
+# A number of tools can generate the hash for you, including 7-zip and sha256sum
+# packwiz supports a number of hashes, including sha256, sha512, sha1 and md5
+hash-format = "sha256"
+hash = "7ab641fc0aa8f370fa979795711a257db69532b84c0f046920f7397fe8625553"
