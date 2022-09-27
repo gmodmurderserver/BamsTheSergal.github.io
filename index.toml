@@ -111,6 +111,11 @@ hash = "5fcdab0e58603298af3683023afa2ff16d1e39add0e7a94502badc4f8d5e52dc"
 metafile = true
 
 [[files]]
+file = "mods/essential.pw.toml"
+hash = "b11bf62429cebdd65400927a3a7f3f52cb238180055236e517586651d79efa1b"
+metafile = true
+
+[[files]]
 file = "mods/ex-compressum.pw.toml"
 hash = "2637ee79835280cd80b0f9e25afc97a7969b7536ac36b4a96e776b5e9b17705c"
 metafile = true
