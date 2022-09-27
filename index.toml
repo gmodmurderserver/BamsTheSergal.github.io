@@ -31,8 +31,8 @@ hash = "15a8e3759f395da24354f9313aca76449c87a4a69b4a720448f5248c5bcad367"
 metafile = true
 
 [[files]]
-file = "mods/better-village-forge.pw.toml"
-hash = "97d8881482eed492862a29bad3741cb65e327a3856e7ba686b89850f7faa12ed"
+file = "mods/bettervillages.pw.toml"
+hash = "dd06989c2b4553b58810063d5fd78e346a7a2bf2d163b249422f174265bda562"
 metafile = true
 
 [[files]]
@@ -116,23 +116,23 @@ hash = "2637ee79835280cd80b0f9e25afc97a7969b7536ac36b4a96e776b5e9b17705c"
 metafile = true
 
 [[files]]
-file = "mods/ex-nihilo-sequentia-mekanism-addon.pw.toml"
-hash = "e2d3689c076a430c9d6fe17e8a57ad02dbf86fb9e057033df31eaf85f224bcf1"
+file = "mods/exnihilocore.pw.toml"
+hash = "5ab001bc1485190019ad925ca025384816ca77b5e3a6c9775ed7897aa16573f1"
 metafile = true
 
 [[files]]
-file = "mods/ex-nihilo-sequentia-thermal-addon.pw.toml"
-hash = "1ce30444037f2141b6046aa5eee63cd159de5e2af0c79ac1509e9325cbb2cf77"
+file = "mods/exnihilomekanism.pw.toml"
+hash = "21127aebe7cf0b7a266321137339ef5ca2d057588af230a860e5d0f830281c38"
 metafile = true
 
 [[files]]
-file = "mods/ex-nihilo-sequentia-tinkers-addon.pw.toml"
-hash = "88bc464f0e4fa9a00fc8358bbf97d9971c99480cd91698d7457cdfdec5485743"
+file = "mods/exnihilothermal.pw.toml"
+hash = "265e75af350f6bcb3e206870e84d36565529a9993569ec9caf09671d04c02bdd"
 metafile = true
 
 [[files]]
-file = "mods/ex-nihilo-sequentia.pw.toml"
-hash = "830ab89eca68b2f7e11728f74c520d1a0d6b1e773dcc7b396516042868026298"
+file = "mods/exnihilotinkers.pw.toml"
+hash = "09ad71c83a887bb0c05f8b49120f7f29f4b3cabd2e649e8cdbf6d13f918a5c1c"
 metafile = true
 
 [[files]]
@@ -318,11 +318,6 @@ metafile = true
 [[files]]
 file = "mods/mantle.pw.toml"
 hash = "3b8744e493e25555053230b01f86c25cfee8e686d4159db5458478b00e404d58"
-metafile = true
-
-[[files]]
-file = "mods/medievial-entity-forge.pw.toml"
-hash = "a21b0c3f2dfffd0ca1718757962dc3399c2d589e603bfd12763a6fb4b6a0af27"
 metafile = true
 
 [[files]]
