@@ -11,6 +11,11 @@ hash = "3a76a2aefe9232c565084f498b925a048cab8e28e9b0a999ed7adad03f6af902"
 metafile = true
 
 [[files]]
+file = "mods/apotheosis.pw.toml"
+hash = "d279ed85d80892f6ea267a01ce72f2e7368ca148f7246ece0f40867c3f441dc1"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "84abec9cda0e905d2e503066a11fd6addb6b28e6604c633485993c25850b7198"
 metafile = true
@@ -38,6 +43,11 @@ metafile = true
 [[files]]
 file = "mods/biomes-o-plenty.pw.toml"
 hash = "9131c77d39b6d4cb198739eda45560416bfc2ee08c6cb5973a2e3435266ea5e5"
+metafile = true
+
+[[files]]
+file = "mods/bookshelf.pw.toml"
+hash = "a9f4995175214b99cd6f0aff1658ee992707f781c3ad41dbf8212e8d3ecbf061"
 metafile = true
 
 [[files]]
@@ -108,6 +118,11 @@ metafile = true
 [[files]]
 file = "mods/durability-tooltip.pw.toml"
 hash = "5fcdab0e58603298af3683023afa2ff16d1e39add0e7a94502badc4f8d5e52dc"
+metafile = true
+
+[[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "fd60634befa8a43c361628181cc28da548dd84bc90ee5fb699dc5c2f13847aa3"
 metafile = true
 
 [[files]]
@@ -318,6 +333,11 @@ metafile = true
 [[files]]
 file = "mods/library-ferret-forge.pw.toml"
 hash = "9fc19a6f6a57aff8425a5205414d174ce777fd7aad38e147d927784ea18232ce"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "f2874376ad091bd17e70a7c417eca51c5b600f00a15c0b8fc9696edfdbb8692b"
 metafile = true
 
 [[files]]
