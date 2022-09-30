@@ -6,6 +6,11 @@ hash = "5fe98822fbe3adef3dcdac8343ca57178cd80b29088f3933a203ec86416ac8c7"
 metafile = true
 
 [[files]]
+file = "mods/alexs-mobs.pw.toml"
+hash = "03da06567af6005bcfd94525e773bb49b448c58b161757f8f5680b857459766c"
+metafile = true
+
+[[files]]
 file = "mods/allthemodium.pw.toml"
 hash = "3a76a2aefe9232c565084f498b925a048cab8e28e9b0a999ed7adad03f6af902"
 metafile = true
@@ -26,8 +31,18 @@ hash = "a4b435f93d0a70d1d71359024fbf3d4eff8ec653f6f4e90acdfe9c6dce656634"
 metafile = true
 
 [[files]]
+file = "mods/artifacts.pw.toml"
+hash = "f79243f3241bb965b2312fba4278feb6c3817affb5fc4f0574482b8253acdb39"
+metafile = true
+
+[[files]]
 file = "mods/attributefix.pw.toml"
 hash = "902e82fd9cff5ba26db563e0995ab8c4f632cb68f26bc05c2ce6ed6aae30a425"
+metafile = true
+
+[[files]]
+file = "mods/autoreglib.pw.toml"
+hash = "4b9f680bd2c3c2efc44ce41626b2fe5860403a4ec38309ab6fd8a04bac16e8bc"
 metafile = true
 
 [[files]]
@@ -63,6 +78,11 @@ metafile = true
 [[files]]
 file = "mods/chisels-bits.pw.toml"
 hash = "50033122cf61e35c245ff0e675f58dcfbd08e1594cd94ab09a4b8717c007e5ae"
+metafile = true
+
+[[files]]
+file = "mods/citadel.pw.toml"
+hash = "dbe6a9e42390a6e5fa08ebd31c44567981ec8face7afff290930d542bd87f6e7"
 metafile = true
 
 [[files]]
@@ -111,6 +131,11 @@ hash = "f1e831b83e7e2d9158db8392feb3c513aa3dd36606e937be508a15709f6f0010"
 metafile = true
 
 [[files]]
+file = "mods/custom-player-models.pw.toml"
+hash = "0a3ac98247fa32cbef5f1ea2d567ed508d42721271fbf014480a938ad14dfc84"
+metafile = true
+
+[[files]]
 file = "mods/dragon-pets.pw.toml"
 hash = "0e7cc3f7f00642be5eea6bafaf938ee6b2782493e0f91f22c0d40ffbc2124d3b"
 metafile = true
@@ -153,6 +178,11 @@ metafile = true
 [[files]]
 file = "mods/exnihilotinkers.pw.toml"
 hash = "09ad71c83a887bb0c05f8b49120f7f29f4b3cabd2e649e8cdbf6d13f918a5c1c"
+metafile = true
+
+[[files]]
+file = "mods/expandability.pw.toml"
+hash = "2ecdf3ae76d4ad10da711a93c966f6306c1bfdec39fe9f6c356000e600bf5844"
 metafile = true
 
 [[files]]
@@ -231,6 +261,11 @@ hash = "2137a8c4fc4a879a53adde15433e5e795135d93c0dd2ae2d22dff3df5f5af67b"
 metafile = true
 
 [[files]]
+file = "mods/gem-crabs.pw.toml"
+hash = "585e3181d264a0dea4b75047e21ecff81398cfab1c41d470ff64d7d2e0ce104f"
+metafile = true
+
+[[files]]
 file = "mods/guard-villagers.pw.toml"
 hash = "2fb1be79501f182d47fae6147b2401749f69250418cff7d6220f54d5e084b1b3"
 metafile = true
@@ -238,6 +273,11 @@ metafile = true
 [[files]]
 file = "mods/hidden-recipe-book.pw.toml"
 hash = "dc422b59965a9da177fea80e959495fe52c906b307f9aef9c09037fbac3e8162"
+metafile = true
+
+[[files]]
+file = "mods/idas.pw.toml"
+hash = "7777572e55ce243a496f98f0fcfd0dd1db5ccb39db7c18243b7610d841c0d963"
 metafile = true
 
 [[files]]
@@ -293,6 +333,11 @@ metafile = true
 [[files]]
 file = "mods/kleeslabs.pw.toml"
 hash = "932425500954d688e35ec443d45b6efa81879971bb53c7ed0c2d5d75072a2004"
+metafile = true
+
+[[files]]
+file = "mods/kobolds.pw.toml"
+hash = "31cc87e65829b578d85be3c291c3acafdcc015bfb748304aacac433ea953450a"
 metafile = true
 
 [[files]]
@@ -441,6 +486,11 @@ hash = "015b1cf6262abdb5d44e2a54d8de6b0a2ef79b8df470365ef72d54f095bd05f9"
 metafile = true
 
 [[files]]
+file = "mods/quark.pw.toml"
+hash = "323bf0949b42dbb97a7c35d17f436a7b2c7eb463cc97f46a54469ff3a0bad027"
+metafile = true
+
+[[files]]
 file = "mods/rechiseled.pw.toml"
 hash = "9712641d9636b08f77133035c011681888a86c9404af007b9024fe00a6ee608c"
 metafile = true
@@ -458,6 +508,11 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "afc003a7bbb6e2398295b0795e8f186244a0f6524c636966f98800ba76951987"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
+hash = "26e591b0b07c8ef07f887eaf3feee21d564c891418e3da0304b39972d6ffb106"
 metafile = true
 
 [[files]]
@@ -511,6 +566,11 @@ hash = "d74b966074318c02ac233f1ef9ab85ab59058866459c4bb0b6226f621590c08e"
 metafile = true
 
 [[files]]
+file = "mods/supplementaries.pw.toml"
+hash = "c8d6ac16ff47c053ebb891980fcbc82db71cad6d042cf144e4d6dcd2bed9ecde"
+metafile = true
+
+[[files]]
 file = "mods/terrablender.pw.toml"
 hash = "526f1411f2287247b09ebe85ce4ba29daaad56f1a817d163ec194f78b11bb8ef"
 metafile = true
@@ -523,6 +583,11 @@ metafile = true
 [[files]]
 file = "mods/the-one-probe.pw.toml"
 hash = "84683e077e40da506524d05702eeca7c56bffb6c4bdefe0eb2575c79da79e531"
+metafile = true
+
+[[files]]
+file = "mods/the-twilight-forest.pw.toml"
+hash = "34ea4985b3c7035cf0b7444a9d019582c83526782c02e1f448e1b837b656d046"
 metafile = true
 
 [[files]]
