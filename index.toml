@@ -97,7 +97,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "a63a236b02421ae8306126c52c688dcd84f9bd8f0509e0a99bbbed0d0a6f7ca7"
+hash = "af650bb1a294781eb74f313f7c000859467932511939d614922e8d5a5f7cf0fd"
 metafile = true
 
 [[files]]
@@ -107,7 +107,7 @@ metafile = true
 
 [[files]]
 file = "mods/configured.pw.toml"
-hash = "8885728c751b6e20f3fc4a9394723ce5250a2fa1fe4078ad83cc27b441e20ba3"
+hash = "15405c43e9dade209198ecb2907944c2c5ada78dda2e680c0ecd44b494ae2671"
 metafile = true
 
 [[files]]
@@ -117,7 +117,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "7b705f57107935d189436c3ed561c986a6ec84a2d80ff94542a46836ab80ea83"
+hash = "49d95a50bd61162db6c7882fc0a2fdac118ead6e7bc592c243d1db29b560db17"
 metafile = true
 
 [[files]]
@@ -222,7 +222,7 @@ metafile = true
 
 [[files]]
 file = "mods/framedblocks.pw.toml"
-hash = "ba87bf1aa6c5e0a67f8430dd800270a874a3949c5d608080cff677219b9c04a6"
+hash = "248e647c7ae4d675a108f242e556a769fd2571f19695349dec2501e9e4bff15f"
 metafile = true
 
 [[files]]
@@ -287,7 +287,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
-hash = "e26f9ead630042b83df476f88167dfad91d410e864cc469e469df4a20efd34e4"
+hash = "bb30a54444d55ff70b81fb17ffd81a49312d2d21a9cb3b4e64793ec2e337a79e"
 metafile = true
 
 [[files]]
@@ -527,17 +527,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "dc446f4396f890259b9e7e13343a2556dc1b444f07f7bac0aede5287f2b2a67a"
+hash = "97b3e820817836018d3274ab22907491957b2253b6224d3200f8dd27871413dc"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "53a781daf9e319b650de8a33aedec8877addc36aa989eceeef9a00a70dee4233"
+hash = "4ddcc494fda400bc5c521b95427249c959fde0f7c17c68c05b8f239caa436806"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "638e4534f22a18fc3fea6cd5f24da9b88f059c2636e6c7e80c3063bef5b7935d"
+hash = "6fa4cb7f8d56346079b8b54f317202b67e727a0fa4bad97c367b93b51af495e6"
 metafile = true
 
 [[files]]
