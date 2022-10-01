@@ -371,6 +371,11 @@ hash = "30e8db81c915da9755c0ebe2563136dfc43c038ad87d9683da1689b1ee3ad0af"
 metafile = true
 
 [[files]]
+file = "mods/laserio.pw.toml"
+hash = "b8a34f17d3c60a79c5111d906c4e47a7dd417a665b60f124334c033d9fe0f085"
+metafile = true
+
+[[files]]
 file = "mods/layered-snowfall.pw.toml"
 hash = "e494bff165e0da90cc0353bb89c39421a3c64f9aaf1c92a58faf244b773cb7ca"
 metafile = true
