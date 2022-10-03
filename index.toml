@@ -136,6 +136,11 @@ hash = "0a3ac98247fa32cbef5f1ea2d567ed508d42721271fbf014480a938ad14dfc84"
 metafile = true
 
 [[files]]
+file = "mods/disenchantingforge.pw.toml"
+hash = "c0a4e9721ce263954e405db273031be6def4a7c5e695c01a30ddfc5f150448fc"
+metafile = true
+
+[[files]]
 file = "mods/dragon-pets.pw.toml"
 hash = "0e7cc3f7f00642be5eea6bafaf938ee6b2782493e0f91f22c0d40ffbc2124d3b"
 metafile = true
