@@ -1,0 +1,13 @@
+name = "Framework"
+filename = "framework-0.2.4-1.18.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "824ddb627bf335651d5ddcfdf7260e616887823d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3926054
+project-id = 549225
